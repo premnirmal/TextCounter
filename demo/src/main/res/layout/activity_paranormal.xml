@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:counter="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ParanormalActivity">
+
+    <com.github.premnirmal.textcounter.CounterView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"
+        android:textColor="@color/orange"
+        counter:autoStart="true"
+        counter:startValue="100"
+        counter:endValue="5000"
+        counter:incrementValue="100"
+        counter:timeInterval="2"
+        counter:prefix="$"
+        counter:type="decimal"
+        />
+
+    <com.github.premnirmal.textcounter.CounterView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondCounter"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"
+        android:text="250 points"
+        counter:autoStart="false"
+        counter:startValue="0"
+        counter:endValue="1500"
+        counter:incrementValue="10"
+        counter:timeInterval="1"
+        counter:suffix=" points"
+        counter:type="integer"
+        />
+
+</LinearLayout>
