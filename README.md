@@ -1,7 +1,11 @@
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.premnirmal/TextCounter/badge.png)](http://search.maven.org/#artifactdetails|com.github.premnirmal|TextCounter|1.0.0|)
+
 # TextCounter
 
 A simple subclass of android's [TextView](http://developer.android.com/reference/android/widget/TextView.html) that counts up or down.
 Customize the counting using the attributes below.
+
+![] (img/counter.gif)
 
 ## Download
 
