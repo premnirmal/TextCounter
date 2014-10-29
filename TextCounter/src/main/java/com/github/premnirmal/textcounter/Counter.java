@@ -24,7 +24,7 @@ class Counter implements Runnable {
 
     @Override
     public void run() {
-        if (newValue >= currentValue) {
+        if (valuesAreCorrect()) {
             float valueToSet;
             if (newValue <= endValue) {
                 valueToSet = newValue;
@@ -36,6 +36,14 @@ class Counter implements Runnable {
             newValue += increment;
             view.removeCallbacks(Counter.this);
             view.postDelayed(Counter.this, interval);
+        }
+    }
+
+    private boolean valuesAreCorrect() {
+        if(increment >= 0) {
+            return newValue >= currentValue;
+        } else {
+            return newValue <= currentValue;
         }
     }
 }

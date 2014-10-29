@@ -15,7 +15,7 @@ See the demo project for more implementation details.
 <dependency>
   <groupId>com.github.premnirmal</groupId>
   <artifactId>TextCounter</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>aar</type>
 </dependency>
 ```
