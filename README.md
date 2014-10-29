@@ -5,6 +5,8 @@
 A simple subclass of android's [TextView](http://developer.android.com/reference/android/widget/TextView.html) that counts up or down.
 Customize the counting using the attributes below.
 
+See the demo project for more implementation details.
+
 ![] (img/counter.gif)
 
 ## Download
