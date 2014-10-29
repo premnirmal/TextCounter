@@ -1,4 +1,4 @@
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.premnirmal/TextCounter/badge.png)](http://search.maven.org/#artifactdetails|com.github.premnirmal|TextCounter|1.0.0|)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.premnirmal/TextCounter/badge.png)](http://search.maven.org/#artifactdetails|com.github.premnirmal|TextCounter|1.0.1|)
 
 # TextCounter
 
