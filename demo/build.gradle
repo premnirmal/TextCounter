@@ -20,6 +20,5 @@ android {
 }
 
 dependencies {
-//    compile project(':TextCounter')
-    compile 'com.github.premnirmal:TextCounter:1.0.0'
+    compile project(':TextCounter')
 }
