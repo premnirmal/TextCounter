@@ -11,7 +11,10 @@ import com.github.premnirmal.textcounter.Formatter;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-
+/**
+ * Created by prem on 10/28/14.
+ * Example usage of {@link com.github.premnirmal.textcounter.CounterView}
+ */
 public class ParanormalActivity extends Activity {
 
     @Override

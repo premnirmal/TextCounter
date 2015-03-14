@@ -12,11 +12,19 @@ See the demo project for more implementation details.
 
 ## Download
 
+# Gradle
+
+``` groovy
+compile 'com.github.premnirmal:TextCounter:1.1.0'
+```
+
+# Maven Central
+
 ``` xml
 <dependency>
   <groupId>com.github.premnirmal</groupId>
   <artifactId>TextCounter</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
   <type>aar</type>
 </dependency>
 ```

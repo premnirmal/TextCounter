@@ -9,7 +9,6 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.github.premnirmal.textcounter"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
@@ -17,7 +16,7 @@ android {
     }
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

@@ -19,10 +19,10 @@
         counter:autoStart="true"
         counter:startValue="100"
         counter:endValue="5000"
-        counter:incrementValue="100"
-        counter:timeInterval="2"
+        counter:incrementValue="10"
+        counter:timeInterval="5"
         counter:prefix="$"
-        counter:type="decimal"
+        counter:type="both"
         />
 
     <com.github.premnirmal.textcounter.CounterView
@@ -37,6 +37,23 @@
         counter:endValue="1500"
         counter:incrementValue="10"
         counter:timeInterval="1"
+        counter:suffix=" points"
+        counter:type="integer"
+        />
+
+    <com.github.premnirmal.textcounter.CounterView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdCounter"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"
+        android:text="250 points"
+        android:textColor="@android:color/holo_blue_light"
+        counter:autoStart="true"
+        counter:startValue="15000"
+        counter:endValue="-50"
+        counter:incrementValue="-50"
+        counter:timeInterval="2"
         counter:suffix=" points"
         counter:type="integer"
         />

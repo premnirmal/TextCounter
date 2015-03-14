@@ -2,7 +2,7 @@ package com.github.premnirmal.textcounter;
 
 /**
  * Created by prem on 10/28/14.
- *
+ * <p/>
  * Class that handles the counting up/down of the text value
  */
 class Counter implements Runnable {
@@ -25,25 +25,39 @@ class Counter implements Runnable {
     @Override
     public void run() {
         if (valuesAreCorrect()) {
-            float valueToSet;
-            if (newValue <= endValue) {
-                valueToSet = newValue;
+            final float valueToSet;
+            if(increment > 0) {
+                if (newValue <= endValue) {
+                    valueToSet = newValue;
+                } else {
+                    valueToSet = endValue;
+                }
+            } else if(increment < 0) {
+                if (newValue >= endValue) {
+                    valueToSet = newValue;
+                } else {
+                    valueToSet = endValue;
+                }
             } else {
-                valueToSet = endValue;
+                return;
             }
             view.setCurrentTextValue(valueToSet);
             currentValue = newValue;
             newValue += increment;
             view.removeCallbacks(Counter.this);
             view.postDelayed(Counter.this, interval);
+        } else {
+            view.setCurrentTextValue(endValue);
         }
     }
 
     private boolean valuesAreCorrect() {
-        if(increment >= 0) {
-            return newValue >= currentValue;
+        if (increment > 0) {
+            return newValue >= currentValue && newValue < endValue;
+        } else if (increment < 0) {
+            return newValue < currentValue && newValue > endValue;
         } else {
-            return newValue <= currentValue;
+            return false;
         }
     }
 }
