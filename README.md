@@ -8,7 +8,7 @@ Customize the counting using the attributes below.
 
 See the demo project for more implementation details.
 
-![] (img/counter.gif)
+![](img/counter.gif)
 
 ## Download
 
