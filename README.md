@@ -91,4 +91,4 @@ MIT
 
 ### Author
 
-> Prem Nirmal | [illegalstate.com](http://illegalstate.com/) | [twitter](https://twitter.com/premnirmal88)
+> [Prem Nirmal](https://twitter.com/premnirmal88)
