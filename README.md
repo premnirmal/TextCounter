@@ -91,4 +91,4 @@ MIT
 
 ### Author
 
-> [Prem Nirmal](https://twitter.com/premnirmal88)
+> [Prem Nirmal](http://premnirmal.me/)
